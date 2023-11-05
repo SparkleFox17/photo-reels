@@ -4,21 +4,114 @@
         <title>Photo Reels</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="./css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link href="./css/style.css" rel="stylesheet">
     </head>
     <body>
-    <div class="container"> 
-        <!-- menu starts -->
-        <h2>Filterable Gallery</h2>
-        <div class="menu"> 
-            <a href="#" class="btn" data-filter="all">All</a>
-            <a href="#" class="btn" data-filter="logo">Logo Design</a>
-            <a href="#" class="btn" data-filter="web" >Web Design</a>
-            <a href="#" class="btn" data-filter="mobile">Mobile Apps</a>
-        </div> 
-        <!-- menu ends -->
-    </div>
+        
+        <div class="container"> 
+            <!-- menu starts -->
+            <div id="filters">
+                <h2>Filterable Gallery</h2>
+                <div class="menu"> 
+                    <a href="#" class="btn" data-filter="all">All</a>
+                    <a href="#" class="btn" data-filter="nb">New Brunswick</a>
+                    <a href="#" class="btn" data-filter="pei">P.E.I.</a>
+                    <a href="#" class="btn" data-filter="ont" >Ontario</a>
+                    <a href="#" class="btn" data-filter="que">Quebec</a>
+                </div> 
+            </div>
+            <!-- menu ends --> 
+
+            <!-- store items starts -->
+            <div class="box" id="store-items">
+                <div class="store-item nb">
+                    <div class="gallery-container">
+                        <div class="slider-wrapper">
+                            <button id="prev-nb-slide" data-filter="nb" class="prev-slide slide-button material-symbols-rounded">chevron_left</button>
+                            <div class="image-list" id="image-nb-list">
+                                <img src="./imgs/nb/nb-1.jpeg" alt="img-1" class="image-item">
+                                <img src="./imgs/nb/nb-2.jpeg" alt="img-2" class="image-item">
+                                <img src="./imgs/nb/nb-3.jpeg" alt="img-3" class="image-item">
+                                <img src="./imgs/nb/nb-4.jpeg" alt="img-4" class="image-item">
+                            </div>
+                            <button id="next-nb-slide" data-filter="nb" class="next-slide slide-button material-symbols-rounded">chevron_right</button>
+                        </div>
+                        <!-- scrollbar starts -->
+                        <div class="slider-scrollbar">
+                            <div class="scrollbar-track">
+                                <div class="scrollbar-thumb"></div>
+                            </div>
+                        </div>
+                        <!-- scrollbar ends -->
+                    </div>
+                </div>
+                <div class="store-item pei">
+                    <div class="gallery-container">
+                        <div class="slider-wrapper">
+                            <button id="prev-pei-slide" data-filter="pei" class="prev-slide slide-button material-symbols-rounded">chevron_left</button>
+                            <div class="image-list" id="image-pei-list">
+                                <img src="./imgs/pei/pei-1.jpeg" alt="img-1" class="image-item">
+                                <img src="./imgs/pei/pei-2.jpeg" alt="img-2" class="image-item">
+                                <img src="./imgs/pei/pei-3.jpeg" alt="img-3" class="image-item">
+                                <img src="./imgs/pei/pei-4.jpeg" alt="img-4" class="image-item">
+                            </div>
+                            <button id="next-pei-slide" data-filter="pei" class="next-slide slide-button material-symbols-rounded">chevron_right</button>
+                        </div>
+                        <!-- scrollbar starts -->
+                        <div class="slider-scrollbar">
+                            <div class="scrollbar-track">
+                                <div class="scrollbar-thumb"></div>
+                            </div>
+                        </div>
+                        <!-- scrollbar ends -->
+                    </div>
+                </div>
+                <div class="store-item ont">
+                    <div class="gallery-container">
+                        <div class="slider-wrapper">
+                            <button id="prev-ont-slide" data-filter="ont" class="prev-slide slide-button material-symbols-rounded">chevron_left</button>
+                            <div class="image-list" id="image-ont-list">
+                                <img src="./imgs/ont/ont-1.jpeg" alt="img-1" class="image-item">
+                                <img src="./imgs/ont/ont-2.jpeg" alt="img-2" class="image-item">
+                                <img src="./imgs/ont/ont-3.jpeg" alt="img-3" class="image-item">
+                                <img src="./imgs/ont/ont-4.jpeg" alt="img-4" class="image-item">
+                            </div>
+                            <button id="next-ont-slide" data-filter="ont" class="next-slide slide-button material-symbols-rounded">chevron_right</button>
+                        </div>
+                        <!-- scrollbar starts -->
+                        <div class="slider-scrollbar">
+                            <div class="scrollbar-track">
+                                <div class="scrollbar-thumb"></div>
+                            </div>
+                        </div>
+                        <!-- scrollbar ends -->
+                    </div>
+                </div>
+                <div class="store-item que">
+                    <div class="gallery-container">
+                        <div class="slider-wrapper">
+                            <button id="prev-que-slide" data-filter="que" class="prev-slide slide-button material-symbols-rounded">chevron_left</button>
+                            <div class="image-list"id="image-que-list">
+                                <img src="./imgs/que/que-1.jpeg" alt="img-1" class="image-item">
+                                <img src="./imgs/que/que-2.jpeg" alt="img-2" class="image-item">
+                                <img src="./imgs/que/que-3.jpeg" alt="img-3" class="image-item">
+                                <img src="./imgs/que/que-4.jpeg" alt="img-4" class="image-item">
+                            </div>
+                            <button id="next-que-slide" data-filter="que" class="next-slide slide-button material-symbols-rounded">chevron_right</button>
+                        </div>
+                        <!-- scrollbar starts -->
+                        <div class="slider-scrollbar">
+                            <div class="scrollbar-track">
+                                <div class="scrollbar-thumb"></div>
+                            </div>
+                        </div>
+                        <!-- scrollbar ends -->
+                    </div>
+                </div>
+            </div> 
+            <!-- store items ends -->
+        </div>
     
 
         <script src="./js/main.js"></script>

@@ -1,35 +1,28 @@
-<!-- menu starts -->
-<div class="container"> 
-    <h2>Filterable Gallery</h2>
-    <div class="menu"> 
-        <a href="#" class="btn" data-filter="all">All</a>
-        <a href="#" class="btn" data-filter="logo">Logo Design</a>
-        <a href="#" class="btn" data-filter="web" >Web Design</a>
-        <a href="#" class="btn" data-filter="mobile">Mobile Apps</a>
-    </div> 
-    <!-- menu ends -->
-
-    <!-- imgs starts -->
-    <div class="box" id="store-items">  
-        <div class="store-item web"> 
-            <img src="./imgs/animation.jpeg" class="store-img" alt="">
+<!-- imgs starts -->
+<div class="container">
+    <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+        <div class="image-list">
+            <img src="./imgs/gifts.jpeg" alt="img-1" class="image-item">
+            <img src="./imgs/fruit-decor.jpeg" alt="img-2" class="image-item">
+            <img src="./imgs/dog-clothing.jpeg" alt="img-3" class="image-item">
+            <img src="./imgs/beach-decor.jpeg" alt="img-4" class="image-item">
+            <img src="./imgs/gifts.jpeg" alt="img-5" class="image-item">
+            <img src="./imgs/fruit-decor.jpeg" alt="img-6" class="image-item">
+            <img src="./imgs/dog-clothing.jpeg" alt="img-7" class="image-item">
+            <img src="./imgs/beach-decor.jpeg" alt="img-8" class="image-item">
+            <img src="./imgs/gifts.jpeg" alt="img-9" class="image-item">
+            <img src="./imgs/fruit-decor.jpeg" alt="img-10" class="image-item">
         </div>
-        <div class="store-item logo">
-            <img src="./imgs/tree.jpeg" class="store-img" alt="">
-        </div>
-        <div class="store-item mobile">
-            <img src="./imgs/clown-fish.jpeg" class="store-img" alt="">
-        </div>
-        <div class="store-item web">
-            <img src="./imgs/rainbow.jpeg" class="store-img" alt="">
-        </div>
-        <div class="store-item logo">
-            <img src="./imgs/wolf.jpeg" class="store-img" alt="">
-        </div>
-        <div class="store-item mobile">
-            <img src="./imgs/waves.jpeg" class="store-img" alt="">
+        <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+    </div>
+    <!-- scrollbar starts -->
+    <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
         </div>
     </div>
+    <!-- scrollbar ends -->
 </div>
- <!-- imgs ends -->
+<!-- imgs ends -->
 <script src="./js/main.js"></script>
